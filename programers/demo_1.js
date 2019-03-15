@@ -1,3 +1,6 @@
+// 세 점의 좌표가 주어지고, v가 매개변수로 주어졌을 때 나머지 한 점의 좌표를 구하라.
+// 단, 직사각형의 각 변은 x축, y축에 평행하며, 반드시 직사각형을 만들 수 있는 경우만 입력으로 주어짐.
+
 function solution(v) {
   let answer = [];
 
@@ -10,12 +13,10 @@ function solution(v) {
       answer[i] = v[1][i];
     }
   }
-
-  console.log("Hello Javascript");
-
-  console.log(answer);
+  return answer;
+  // console.log(answer);
 }
 
 let arr = [[1, 1], [2, 2], [2, 1]];
 
-solution(arr);
+// solution(arr);
