@@ -18,6 +18,6 @@ function solution(v) {
   // console.log(answer);
 }
 
-let arr = [[1, 1], [2, 2], [2, 1]];
+// let arr = [[1, 1], [2, 2], [2, 1]];
 
 // solution(arr);

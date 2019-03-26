@@ -20,8 +20,8 @@ function solution(participant, completion) {
   // console.log(answer);
 }
 
-let allPeople = ["leo", "kiki", "eden"];
+// let allPeople = ["leo", "kiki", "eden"];
 
-let comPeople = ["eden", "kiki"];
+// let comPeople = ["eden", "kiki"];
 
 // solution(allPeople, comPeople);
