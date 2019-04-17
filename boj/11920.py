@@ -32,10 +32,8 @@ progressions = [int(num) for num in progression.split()]
 def bubble(n_k_s, progressions):
     for i in range(0, n_k_s[1]):
         for j in range(i, n_k_s[0]-1):
-            if (progressions[j] > progressions[j+1]):
-                temp = progressions[j]
-                progressions[j] = progressions[j+1]
-                progressions[j+1] = temp
+            if progressions[j] > progressions[j+1]:
+                progressions[j], progressions[j+1] = progressions[j+1], progressions[j]
     for k in progressions:
         print(k, end=" ")
 
