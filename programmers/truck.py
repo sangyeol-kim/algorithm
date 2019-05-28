@@ -25,3 +25,25 @@
 # 2	10	[7,4,5,6]	8
 # 100	100	[10]	101
 # 100	100	[10,10,10,10,10,10,10,10,10,10]	110
+
+# 트럭은 1초에 1만큼 움직이며, 다리 길이는 bridge_length이고 다리는 무게 weight까지 견딥니다.
+
+bridge_length = 2
+weight = 10
+truck_weight = [7,4,5,6]
+
+
+def solution(bridge_length, weight, truck):
+  answer = 0
+  queue = [0] * bridge_length
+  
+  while queue:
+    answer += 1
+    queue.pop(0)
+
+    if truck:
+      if sum(queue) + truck[0] <= weight:
+        queue.append(truck.pop(0))
+      else:
+        queue.append(0)
+  return answer
