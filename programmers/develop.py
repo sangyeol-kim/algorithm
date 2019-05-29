@@ -58,4 +58,4 @@ def solution(progresses, speeds):
       answer.append(count)
       day_list.pop()
 
-  return answer
+  return answer  
