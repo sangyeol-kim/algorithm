@@ -22,3 +22,21 @@
 # CBADF: 가능한 스킬트리입니다.
 # AECB: 가능한 스킬트리입니다.
 # BDA: B 스킬을 배우기 전에 C 스킬을 먼저 배워야 합니다. 불가능한 스킬트리입니다.
+
+# 선행 스킬 순서 skill과 유저들이 만든 스킬트리 skill_trees
+# 가능한 스킬트리 개수를 resturn
+
+def solution(skill, skill_trees):
+  answer = 0
+
+  for i in skill_trees:
+    queue = []
+    for j in i:
+      if j not in queue:
+        queue.append(j)        
+    for k in queue:
+      
+
+  return answer
+
+print(solution("CBD", ["BACDE", "CBADF", "AECB", "BDA"]))
