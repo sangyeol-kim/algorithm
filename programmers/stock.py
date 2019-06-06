@@ -17,7 +17,6 @@
 
 def solution(prices):
   answer = []
-  fin = False
 
   for i in range(0, len(prices)-1):
     fin = False
