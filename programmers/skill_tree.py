@@ -34,10 +34,10 @@ def solution(skill, skill_trees):
     fin = True
     for j in range(len(i)):
       if i[j] in skill:
-        str.append(i[j])
+        list.append(i[j])
     
-    for k in range(len(str)):
-      if str[k] != skill[k]:
+    for k in range(len(list)):
+      if list[k] != skill[k]:
         fin = False
         break
     

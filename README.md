@@ -45,3 +45,5 @@
 - [기능개발](./programmers/develop.py)
 - [탑](./programmers/top.py)
 - [스킬트리](./programmers/skill_tree.py)
+- [프린터](./programmers/printer.py)
+- [주식가격](./programmers/stock.py)
