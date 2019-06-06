@@ -41,7 +41,6 @@ def solution(priorities, location):
   answer = 0
 
   while len(priorities) != 0:
-    
     if priorities[0] >= max(priorities):
       answer += 1
       priorities.pop(0)
@@ -56,5 +55,3 @@ def solution(priorities, location):
         location -= 1
 
   return answer
-
-print(solution([2,1,3,2], 2))
