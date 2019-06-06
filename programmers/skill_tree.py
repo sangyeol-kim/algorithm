@@ -30,13 +30,18 @@ def solution(skill, skill_trees):
   answer = 0
 
   for i in skill_trees:
-    queue = []
-    for j in i:
-      if j not in queue:
-        queue.append(j)        
-    for k in queue:
-      
+    list = []
+    fin = True
+    for j in range(len(i)):
+      if i[j] in skill:
+        str.append(i[j])
+    
+    for k in range(len(str)):
+      if str[k] != skill[k]:
+        fin = False
+        break
+    
+    if fin == True:
+      answer += 1
 
   return answer
-
-print(solution("CBD", ["BACDE", "CBADF", "AECB", "BDA"]))
