@@ -48,3 +48,4 @@
 - [프린터](./programmers/printer.py)
 - [주식가격](./programmers/stock.py)
 - [쇠막대기](./programmers/bong.py)
+- [스코빌 지수](./programmers/scoville.py)
