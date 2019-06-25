@@ -55,3 +55,4 @@
 - [올바른 괄호](./programmers/bracket.py)
 - [다음 큰 숫자](./programmers/next_big_int.py)
 - [최댓값과 최솟값](./programmers/max_min.py)
+- [최솟값 만들기](./programmers/make_min.py)
