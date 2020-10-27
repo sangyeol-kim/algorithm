@@ -14,9 +14,7 @@ let result = 0;
 for (let i = 0; i < cardCount; i++) {
   for (let j = 1; j < cardCount; j++) {
     for (let k = 2; k < cardCount; k++) {
-      const cardNumbers = [sortedSpreadCard[i], sortedSpreadCard[j], sortedSpreadCard[k]];
-
-      if ([...new Set(cardNumbers)].length === 3) {
+      if ([...new Set([sortedSpreadCard[i], sortedSpreadCard[j], sortedSpreadCard[k]])].length === 3) {
         const totalCard = sortedSpreadCard[i] + sortedSpreadCard[j] + sortedSpreadCard[k];
 
         if (totalCard <= targetNumber && totalCard > result) {
@@ -26,3 +24,5 @@ for (let i = 0; i < cardCount; i++) {
     }
   }
 }
+
+console.log(result);
