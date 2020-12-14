@@ -3,3 +3,6 @@ hackday
 programers_test
 woowa
 a
+.DS_Store
+.idea
+/temp/**/*.js
